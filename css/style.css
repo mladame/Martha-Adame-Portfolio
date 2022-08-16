@@ -47,24 +47,22 @@ background-color: var(--dark);
 }
     
 /* -----Projects------- */
-.projects{
+.container {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: var(--testborder);
+  align-content: center;
 }
 
 .horiseon{
     margin: auto;
     height: 300px;
-    border: var(--testborder);
     padding: 20px;
-    background-color: var(--off-white);
 }
 
 /* need to make these into a grid */
-.projects-2 {
-    border: var(--testborder);
-    height: 150px;
-    grid-template-columns: auto auto;
-    display: inline-grid;
+.projects {
+   display: grid;
+    grid-template-columns: 50% 50%; 
 }
