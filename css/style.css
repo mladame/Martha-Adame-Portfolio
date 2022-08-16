@@ -33,6 +33,8 @@ background-color: var(--dark);
     
  nav{
     background-color: var(--dark);
+    display: inline-flex;
+
 }
     
  /* ----About me---- */
@@ -65,5 +67,4 @@ background-color: var(--dark);
     height: 150px;
     grid-template-columns: auto auto;
     display: inline-grid;
-    column-count: 2;
 }
