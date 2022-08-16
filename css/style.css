@@ -25,3 +25,45 @@ color: var(--antiquewhite);
 background-color: var(--dark);
 }
 
+#h1-p{
+    font-size: 15px;
+    color: var(--off-white);
+    background-color: var(--dark);
+    }
+    
+ nav{
+    background-color: var(--dark);
+}
+    
+ /* ----About me---- */
+ .intro{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: var(--testborder);
+    height: 500px;
+}
+    
+/* -----Projects------- */
+.projects{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.horiseon{
+    margin: auto;
+    height: 300px;
+    border: var(--testborder);
+    padding: 20px;
+    background-color: var(--off-white);
+}
+
+/* need to make these into a grid */
+.projects-2 {
+    border: var(--testborder);
+    height: 150px;
+    grid-template-columns: auto auto;
+    display: inline-grid;
+    column-count: 2;
+}
