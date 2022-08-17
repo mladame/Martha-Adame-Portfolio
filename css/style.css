@@ -6,16 +6,17 @@
     --testborder: 2px solid black;
 }
 
-*{
+/* *{
     background-color: var(--white); 
     margin: 0; 
-}
+} */
 
-/* ---header---  */
+/* ---HEADER---  */
 header{
     border: 2px solid var(--white);
     background-color: var(--dark);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: in;
 }
 
 h1{
@@ -24,23 +25,16 @@ h1{
     color: var(--white);
     background-color: var(--dark);
 }
-
-#h1-p{
-    font-size: 15px;
-    line-height: 35px;
-    color: var(--off-white);
-    background-color: var(--dark);
-    }
     
-/* -----NAV----- */
+    /* -----NAV----- */
 nav{
     background-color: var(--dark);
-    float: right;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    /* float: right; */
 }
 
 nav ul {
@@ -59,22 +53,9 @@ a:link, a:visited {
 a:hover, a:active {
     color: cornflowerblue;
 }
-
- /* ----About me---- */
-.intro{
-    margin: auto;
-    border: var(--testborder);
-    height: 500px;
-    background-image: url(../images/light-blue-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-    
+ 
 /* -----Projects------- */
+
 .container {
   display: flex;
   flex-direction: row;
@@ -83,8 +64,24 @@ a:hover, a:active {
   margin-bottom: 20px;
   border: var(--testborder);
   align-content: center;
+  background-size: cover;
 }
 
+/* ----About me---- */
+.intro{
+    border: var(--testborder);
+    margin: auto;
+    height: 500px;
+    background-image: url(../images/light-blue-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 1000px;
+    padding left: 300px;
+}
+   
 .horiseon{
     margin: auto;
     height: 500px;
@@ -102,9 +99,8 @@ a:hover, a:active {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr); 
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    column-gap: 1em;
+    grid-auto-rows: 100px;
 }
 
 .hero {
