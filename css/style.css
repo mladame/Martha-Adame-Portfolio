@@ -4,6 +4,8 @@
     --off-white: #FFFAF0;
     --white: whitesmoke;
     --testborder: 2px solid black;
+    --lightblue:  rgba(175,218,247,1);
+    --pink-light: rgba(255,215,232,1);
 }
 
 *{
@@ -24,9 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    background-color: #6caca8;
-    /* border: var(--testborder); */
-    /* width: 100%; */
+    background-color: var(--lightblue);
 }
 
 h1{
@@ -39,14 +39,11 @@ h1{
     /* position: fixed;
  */
 }
-    
+
     /* -----NAV----- */
 nav{
-    /* width: 100%; */
-    /* height: 60px; */
     /* position: fixed; */
     top: 0;
-    /* flex-direction: flex-end; */
     justify-content: flex-end;
     color: black;
 }
@@ -89,33 +86,57 @@ nav a{
 .intro{
     margin: auto;
     height: 500px;
-    background-image: url(../images/light-blue-background.jpg);
+    /* background-image: url(../images/light-blue-background.jpg); */
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    /* background: rgb(255,215,232);
+    background: radial-gradient(circle, rgba(255,215,232,1) 0%, rgba(192,219,250,1) 100%); */
+    background: rgb(132,173,242);
+    background: radial-gradient(circle, rgba(132,173,242,1) 0%, rgba(72,122,218,1) 51%, rgba(175,218,247,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-right: 1000px;
-    padding-left: 300px;
+    padding-right: 500px;
+    padding-left: 500px;
     margin-bottom: 100px;
+    /* border-radius: 10% / 50%; */
+}
+
+.aboutMe {
+    font-size: 2em;
+    text-align: left;
+}
+
+.imgMar {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    align-items: left;
+    filter: grayscale(100%);
 }
 
 .horiseon{
+    margin: auto;
     height: 500px;
     background-image: url(../images/horiseon-screenshot\ \(2\).PNG);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 1000px;
-    padding-left: 300px;
+    padding-bottom: 200px;
+    padding-right: 500px;
+    padding-left: 500px;
     margin-bottom: 50px;
 }
 
 /* need to make these into a grid */
 .projects {
+    margin: auto;
     display: grid;
-    width: 100%;
+    /* width: 100%; */
+    width: 1200px;
+    height: auto;
     grid-template-columns: repeat(2, 1fr); 
     column-gap: 1em;
     grid-auto-rows: 100px;
@@ -123,7 +144,7 @@ nav a{
 
 .hero {
     background-color: white;
-    background-image: url("../images/pastel-watercolor-painted-background.webp");
+    background-image: url(../images/blue-abstract-triangle-background.PNG);
     background-size: cover;
     background-position: center;
     padding: 40px;
