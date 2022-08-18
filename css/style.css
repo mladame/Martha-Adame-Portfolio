@@ -16,61 +16,73 @@ body{
     height: 100%;
     min-height: 100%;
 }
+
 /* ---HEADER---  */
 header{
-    border: 2px solid var(--white);
-    background-color: var(--dark);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: inline;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
     vertical-align: middle;
+    background-color: #6caca8;
+    /* border: var(--testborder); */
+    /* width: 100%; */
 }
 
 h1{
-    padding: 200px 0;
-    height: 100%;
-    font-size: 2em;
-    text-align: center;
-    line-height: 40px:
+    padding: 10px 0;
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    /* position: fixed;
+ */
 }
     
     /* -----NAV----- */
 nav{
-    width: 100%;
-    height: 60px;
-    position: fixed;
+    /* width: 100%; */
+    /* height: 60px; */
+    /* position: fixed; */
     top: 0;
+    /* flex-direction: flex-end; */
+    justify-content: flex-end;
+    color: black;
 }
 
 nav ul {
     padding:20px;
     margin: 0 auto;
     list-style: none;
-    text-align: center;
+    text-align: right;
+    color: black;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
+    justify-content: space-between;
     margin: 0 10px;
 }
 
-a{
-   padding: 10px 0;
-        color: var(--dark);
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: bold;
-        transition: all 0.2s ease; 
+nav a{
+    padding: 10px 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 /* -----Projects------- */
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-size: cover;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* ----About me---- */
@@ -87,7 +99,7 @@ a{
     padding-left: 300px;
     margin-bottom: 100px;
 }
-   
+
 .horiseon{
     height: 500px;
     background-image: url(../images/horiseon-screenshot\ \(2\).PNG);
@@ -101,7 +113,7 @@ a{
 }
 
 /* need to make these into a grid */
- .projects {
+.projects {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr); 
