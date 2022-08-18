@@ -1,5 +1,5 @@
 :root{
-    --dark: #6caca8;
+    --grey: rgb(141, 141, 141);
     --orange: #E9967A;
     --off-white: #FFFAF0;
     --white: whitesmoke;
@@ -12,6 +12,7 @@
     margin:0;
     padding: 0%;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
@@ -26,7 +27,8 @@ header{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    background-color: var(--lightblue);
+    /* background-color: var(--lightblue); */
+    background-color: var(--med-blue);
 }
 
 h1{
@@ -36,6 +38,7 @@ h1{
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
+    color: var(--off-white);
     /* position: fixed;
  */
 }
@@ -45,7 +48,7 @@ nav{
     /* position: fixed; */
     top: 0;
     justify-content: flex-end;
-    color: black;
+    /* color: black; */
 }
 
 nav ul {
@@ -53,7 +56,7 @@ nav ul {
     margin: 0 auto;
     list-style: none;
     text-align: right;
-    color: black;
+    /* color: var(--off-white); */
 }
 
 nav ul li {
@@ -64,7 +67,7 @@ nav ul li {
 
 nav a{
     padding: 10px 0;
-    color: black;
+    color: var(--off-white);
     font-size: 1rem;
     font-weight: bold;
     transition: all 0.2s ease;
@@ -86,27 +89,25 @@ nav a{
 .intro{
     margin: auto;
     height: 500px;
-    /* background-image: url(../images/light-blue-background.jpg); */
-    /* background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    /* background: rgb(255,215,232);
-    background: radial-gradient(circle, rgba(255,215,232,1) 0%, rgba(192,219,250,1) 100%); */
-    background: rgb(132,173,242);
-    background: radial-gradient(circle, rgba(132,173,242,1) 0%, rgba(72,122,218,1) 51%, rgba(175,218,247,1) 100%);
+    background-image: url(../images/luka-senica-FxmV3YLx_co-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 400px;
-    padding-left: 400px;
-    margin-bottom: 100px;
-    /* border-radius: 10% / 50%; */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .aboutMe {
     font-size: 2em;
     text-align: left;
+}
+
+.myinfo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    line-height: 20px;
 }
 
 .imgMar {
@@ -115,21 +116,10 @@ nav a{
     width: 300px;
     height: auto;
     display: block;
-    filter: grayscale(100%);
     position: top -10px;
 }
 
 .horiseon{
-    /* margin: auto;
-    height: 500px;
-    background-image: url(../images/horiseon-screenshot\ \(2\).PNG);
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
-    padding-right: 500px;
-    padding-left: 500px;
-    margin-bottom: 50px; */
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -138,21 +128,17 @@ nav a{
     margin: auto;
 }
 
-.horimg{
+.horieimg{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 1000px;
-    /* margin-left: auto;
-    margin-right: auto;
-    display: block; */
 }
 
 /* need to make these into a grid */
 .projects {
     margin: auto;
     display: grid;
-    /* width: 100%; */
     width: 1200px;
     height: auto;
     grid-template-columns: repeat(2, 1fr); 
@@ -162,7 +148,8 @@ nav a{
 
 .hero {
     background-color: white;
-    background-image: url(../images/blue-abstract-triangle-background.PNG);
+    background: rgb(255,229,193);
+    background: linear-gradient(90deg, rgba(255,229,193,1) 0%, rgba(161,214,241,1) 50%, rgba(40,90,158,1) 100%);
     background-size: cover;
     background-position: center;
     padding: 40px;
@@ -211,8 +198,10 @@ nav a{
 
 /* ----FOOTER---- */
 footer{
-    background-color: var(--lightblue);
+    /* background-color: var(--lightblue); */
+    background-color: var(--grey);
     margin: auto;
+    padding: 10px;
 
 }
 
