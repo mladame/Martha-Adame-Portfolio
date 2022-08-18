@@ -5,7 +5,7 @@
     --white: whitesmoke;
     --testborder: 2px solid black;
     --lightblue:  rgba(175,218,247,1);
-    --pink-light: rgba(255,215,232,1);
+    --med-blue:  rgb(95, 169, 219);
 }
 
 *{
@@ -168,6 +168,7 @@ nav a{
     list-style: none;
     text-align: center;
     color: black;
+    background-color: var(--med-blue);
 }
 
 .contactMe li{
@@ -179,8 +180,13 @@ nav a{
 .contact-link {
     padding: 10px 0;
     color: black;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     transition: all 0.2s ease;
     text-decoration: none;
+}
+
+.contacttitle {
+    text-align: center;
+    background-color: var(--lightblue);
 }
