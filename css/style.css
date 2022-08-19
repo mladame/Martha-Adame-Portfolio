@@ -90,6 +90,8 @@ nav a{
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .aboutMe {
@@ -109,10 +111,11 @@ nav a{
 
 .imgMar {
     max-width: 50%;
-    width: 400px;
+    width: 350px;
     height: auto;
     position: top -10px;
     border-radius: 10px;
+    opacity: 0.8;
 }
 
 .imgcontainer .myinfo {
@@ -123,7 +126,7 @@ nav a{
     left: 0; 
     border-radius: 10px;
     height: 100%; 
-    width: 400px;
+    width: 350px;
     margin: 10px;
     margin-right: 0; 
     opacity: 0; 
@@ -140,18 +143,16 @@ nav a{
     opacity: 0.5;
 }
 
-.imgMar:hover {
-    opacity: 0.7;
-}
-
 /* ------WORK TITLE----- */
 .work{
-    margin: 20px;
+    margin: auto;
+    margin-bottom: 10px;
     padding: 10px;
     width: 1000px;
     line-height: 50px;
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--lightblue);
     /* align-items: center;
     justify-content: center;
     display: flex; */
@@ -204,6 +205,7 @@ nav a{
     background-size: cover;
     margin-top: 50px;
     margin-bottom: 20px;
+    margin: auto;
 }
 
 .contactMe{
@@ -224,7 +226,7 @@ nav a{
 .contact-link {
     padding: 10px 0;
     color: black;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: bold;
     transition: all 0.2s ease;
     text-decoration: none;
@@ -233,7 +235,9 @@ nav a{
 .contacttitle {
     text-align: center;
     background-color: var(--lightblue);
-    line-height: 40px;
+    line-height: 34px;
+    padding: 5px;
+
 }
 
 /* ----FOOTER---- */
@@ -246,6 +250,26 @@ footer{
 
 footer h2 {
     text-align: center;
+    font-size: 15px;
 }
 
 /* -----QUERY MEDIA------ */
+@media screen and (min-width: 1000px) {
+    .projects{
+        max-width: 1000px;
+    }
+
+    .intro{
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer{
+        font-size: 20px;
+    }
+}
+
