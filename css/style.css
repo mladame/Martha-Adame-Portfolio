@@ -163,9 +163,15 @@ nav a{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 1000px;
+    /* width: 1000px; */
     height: fit-content;
+}
+
+.horiseon h3 {
     margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    border: opacity.0;
 }
 
 .horieimg{
@@ -173,6 +179,10 @@ nav a{
     border-radius: 4px;
     padding: 5px;
     width: 1000px;
+    margin: auto;
+    justify-content: center;
+    align-items: middle;
+    display: block;
 }
 
 /* -------GRID PROJECT GALLERY------ */
@@ -254,10 +264,7 @@ footer h2 {
 }
 
 /* -----QUERY MEDIA------ */
-@media screen and (min-width: 1000px) {
-    .projects{
-        max-width: 1000px;
-    }
+@media screen and (min-width: 1001px) {
 
     .intro{
         max-width: 1000px;
@@ -268,8 +275,65 @@ footer h2 {
         margin-bottom: 30px;
     }
 
+    .projects{
+        max-width: 1000px;
+    }
+
     .footer{
         font-size: 20px;
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .horieimg{
+        max-width: 85%;
+    }
+
+    .projects {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imgcontainer .myinfo {
+        display: inline-block;
+        vertical-align: middle;
+        position: static;
+        opacity: 1;
+        color: var(--off-white);
+        background-color: var(--darkgray);
+        border: #494949cb 1px solid;
+    }
+
+    .myinfo {
+        margin-bottom: -2px;
+    }
+    
+    .projects{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+        min-height: 100%;
+        padding: 2rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .contactMe {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-link {
+        line-height: 35px;
+    }
+}
